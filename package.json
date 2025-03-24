@@ -9,6 +9,8 @@
     "lint": "next lint",
     "test": "jest",
     "clean": "rimraf .next"
+     "export": "next build && next export",
+    "deploy": "npm run export && git add . && git commit -m 'Deploy to GitHub Pages' && git push"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
